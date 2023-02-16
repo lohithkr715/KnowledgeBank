@@ -1,0 +1,55 @@
+:root {
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+
+.main-area {
+    background: whitesmoke;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+
+.main-area .main-title>h2 {
+    font-family: Rubik;
+}
+
+.main-area .selection-area {
+    background: white;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+
+.main-area .topic-area .topic-info .head {
+    font-family: Acme;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.main-area .topic-area .topic-info .text-desc {
+    font-family: Rubik;
+    font-size: .9rem;
+    color: #777777
+}
+
+.main-area .topic-area .topic-details {
+    background: white;
+    border-radius: .5rem;
+    padding: 1.5rem;
+}
+
+.main-area .topic-area .topic-details:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.btn-prop:hover {
+    background: transparent;
+    border: 2px solid #00a94e;
+}
+
+.download:hover {
+    text-decoration: none;
+    color: black;
+}

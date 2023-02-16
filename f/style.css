@@ -1,0 +1,265 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+
+:root {
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.305);
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+:root {
+    --Snigle-font: "Sniglet", cursive;
+    --Rubki: "Rubik", cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "Lobster", cursive;
+    --light-black: #333333;
+    --bggradient: linear-gradient(90deg, #05A6F0 0%, #6a62fe 100%);
+    --light-grey: rgba(255, 255, 255, 0.5);
+}
+
+header {
+    background: #dd2476;
+    background-color: var(--bggradient);
+}
+
+header a {
+    font-family: var(--Snigle-font);
+    font-size: 0.9em;
+    color: whitesmoke;
+
+}
+
+.content-item {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.content-item a {
+    color: black;
+    padding: 12px, 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.content-item a:hover {
+    background: #05A6F0;
+    border-radius: .3rem;
+}
+
+.dropdown:hover .content-item {
+    display: block;
+}
+
+.dropdown .content-item {
+    padding: .7rem !important;
+    border-radius: .3rem;
+}
+
+.dropdown .content-item>a {
+    padding: .3rem;
+}
+
+header .nav-item:last-child {
+    padding-right: 10.5em;
+}
+
+header .nav-item {
+    padding: 0.9em;
+}
+
+header .navbar-brand {
+    padding-left: 8rem;
+}
+
+header .nav-link:hover {
+    color: black;
+}
+
+header .row .col-md-5 {
+    padding: 4.2vmin 1vmin;
+}
+
+/* Login Box */
+
+main {
+    background: whitesmoke;
+    height: 100%;
+    border-top: 2px solid white;
+    overflow-y: hidden;
+    /* Hide vertical scrollbar */
+}
+
+main .login-box {
+    background-color: white;
+    border-radius: 1rem;
+    height: 100%;
+    width: 36%;
+    margin: 7rem 7rem;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.1);
+    transition: box-shadow .4s ease;
+    padding: 0 2rem 2rem 2rem;
+}
+
+main .login-box:hover {
+    box-shadow: var(--box-shadow);
+}
+
+main .login-box .head {
+    font-size: 2rem;
+    font-family: Acme;
+    padding: 2rem 0 0 0;
+}
+
+main .login-box input[type=password]:focus {
+    border: 1px solid #05A6F0;
+}
+
+main .login-box select:focus {
+    border: 1px solid #05A6F0;
+}
+
+main .login-box .submit-btn {
+    width: 100%;
+    background: var(--bggradient);
+}
+
+main .login-box .submit-btn:hover {
+    background: transparent;
+    color: black;
+    border: 2px solid #05A6F0;
+}
+
+.text-secondry {
+    color: #777777;
+}
+
+
+main .category-area {
+    padding: 4rem 2rem;
+}
+
+main .category-area .title {
+    padding: 0 14rem;
+}
+
+main .category-area .title h1 {
+    font-size: 35px;
+}
+
+main>.category-area .category-area-box {
+    background-color: white;
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    border-radius: .5rem;
+    transition: box-shadow .7s ease;
+}
+
+main>.category-area .category-area-box:hover {
+    box-shadow: var(--box-shadow);
+}
+
+main .category-area .category-area-field .card-title>a {
+    color: #05A6F0;
+}
+
+main .category-area .category-area-field .card-title>a:hover {
+    color: black;
+}
+
+/* manage area */
+
+main .manage .title h1 {
+    font-size: 35px;
+    margin-top: 3rem;
+
+}
+
+main .manage-field .manage-box {
+    background-color: white;
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+    border-radius: .5rem;
+}
+
+main .manage-field .manage-box:hover {
+    box-shadow: var(--box-shadow);
+}
+
+main .manage-field .manage-box .card-title a {
+    color: #05A6F0;
+}
+
+
+/* end manage area */
+
+/* add topic area */
+
+main .add-topic {
+    background-color: white;
+    border-radius: 1rem;
+    height: 100%;
+    width: 60%;
+    margin: 3rem auto;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.1);
+    transition: box-shadow .4s ease;
+    padding: 0 2rem 2rem 2rem;
+}
+
+main .add-topic:hover {
+    box-shadow: var(--box-shadow);
+}
+
+main .add-topic .head {
+    font-size: 2rem;
+    font-family: Acme;
+    padding: 2rem 0 0 0;
+}
+
+main .add-topic .topic-box {
+    width: 80%;
+}
+
+/* end add topic area */
+
+/* View Topic area */
+
+main .view-topic-area .topic-area {
+    background: white;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    transition: box-shadow .4s ease;
+}
+
+main .view-topic-area .topic-area:hover {
+    box-shadow: var(--box-shadow);
+}
+
+main .view-topic-area .topic-area .topic-details .head {
+    font-family: Acme;
+    font-size: 1.1rem;
+    color: black;
+}
+
+/* End View Topic area */

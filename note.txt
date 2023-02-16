@@ -1,0 +1,46 @@
+Step to run project:
+
+1) Move Knowledge Bank Project to htdocs folder(Inside XAMPP Server)
+
+2) Open XAMPP Control Panel and start Apache & MySQL Server
+
+3) Open any browser and type localhost
+
+4) Open PHPMyAdmin (or type http://localhost/phpmyadmin/)
+
+5) Create 'knowledgebank' database and then click on Import option
+
+6) Choose the knowledgebankDB (SQL)file inside the knowledgebank folder
+
+7) Then click on Go button at bottom (Now DB successfully created)
+
+8) Now again type http://localhost/knowledgebank/ to view your project
+
+9) Congrats, now your project successfully run... 		
+
+Learn from the source code and do modifcation on this project.
+
+
+Admin Password: master123
+Faculty Password: 11111
+
+mail id: contact@webappcreator.in
+
+Thank You So Much
+Keep Learning, Keep Supporting
+From
+Webapp Creator
+
+Follow us for more awesome content on web development: 
+
+Facebook: https://www.facebook.com/webappcreator.in
+Instagram: https://www.instagram.com/webapp_creator/
+Linkedin: https://www.linkedin.com/company/webappcreator
+
+Join our telegram channel for more updates: 
+
+Telegram: https://t.me/webappcreator
+
+Website: https://webappcreator.in
+
+

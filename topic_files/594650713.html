@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tables</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="jumbotron text-center" style="margin-bottom:0">
+<h1>Database Tables</h1>
+</div>
+
+<div class="container" style="margin-top:30px">
+<h4> DepartmentTable </h4>
+<table class="table table-striped table-hover table-bordered">
+<thead>
+<tr>
+<th>DepartmentId(primaryKey)</th>
+<th>DepartmentName</th>
+</tr></thead>
+<tr>
+<td>001</td>
+<td>Microsoft</td>
+</tr>
+<tr>
+<td>002</td>
+<td>Android</td>
+</tr>
+<tr>
+<td>003</td>
+<td>IOS</td>
+</tr>
+</table>
+</div>
+
+
+<div class="container" style="margin-top:30px">
+<h4> EmployeeTable </h4>
+<table class="table table-striped table-hover table-bordered">
+<thead>
+<tr>
+<th>EmployeeId(primaryKey)</th>
+<th>EmpName</th>
+<th>Email</th>
+<th>Password</th>
+<th>Phone</th>
+<th>DepartmentId(foreignKey)</th>
+</tr></thead>
+<tr>
+<td>001</td>
+<td>John</td>
+<td>john@yahoo.com</td>
+<td>*******</td>
+<td>78978945612</td>
+<td>002</td>
+</tr>
+</table>
+</div>
+
+
+<div class="container" style="margin-top:30px">
+<h4> ClientTable </h4>
+<table class="table table-striped table-hover table-bordered">
+<thead>
+<tr>
+<th>ClientId(primaryKey)</th>
+<th>ClientName</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Address</th>
+</tr></thead>
+<tr>
+<td>001</td>
+<td>Microsoft</td>
+<td>microsoftoffical@hotmail.com</td>
+<td>8989898989</td>
+<td>San Diego USA</td>
+</tr>
+<tr>
+<td>001</td>
+<td>Facebook</td>
+<td>facebook@hotmail.com</td>
+<td>8989898989</td>
+<td>San Hose USA</td>
+</tr>
+</table>
+</div>
+
+<div class="container" style="margin-top:30px">
+<h4> ProjectTable </h4>
+<table class="table table-striped table-hover table-bordered">
+<thead>
+<tr>
+<th>ProjectId(primaryKey)</th>
+<th>ProjectName</th>
+<th>ClientId(foreignKey)</th>
+</tr></thead>
+<tr>
+<td>121</td>
+<td>E-Commerce Website</td>
+<td>001</td>
+</tr>
+<tr>
+<td>131</td>
+<td>WebsiteToApp</td>
+<td>002</td>
+</tr>
+</table>
+</div>
+
+<div class="container" style="margin-top:30px">
+<h4> CategoryTable </h4>
+<table class="table table-striped table-hover table-bordered">
+<thead>
+<tr>
+<th>CategoryId(primaryKey)</th>
+<th>CategoryName</th>
+</tr></thead>
+<tr>
+<td>001</td>
+<td>Accounts</td>
+</tr>
+<tr>
+<td>002</td>
+<td>HR</td>
+</tr>
+<tr>
+<td>003</td>
+<td>Traning</td>
+</tr>
+</table>
+</div>
+
+<div class="container" style="margin-top:30px">
+<h4> ActivityTable </h4>
+<table class="table table-striped table-hover table-bordered">
+<thead>
+<tr>
+<th>ActivityId(primaryKey)</th>
+<th>ActivityName</th>
+<th>CategoryId(foreignKey)</th>
+</tr></thead>
+<tr>
+<td>121</td>
+<td>Accounts</td>
+<td>001</td>
+</tr>
+<tr>
+<td>122</td>
+<td>HR</td>
+<td>002</td>
+</tr>
+<tr>
+<td>123</td>
+<td>Traning</td>
+<td>003</td>
+</tr>
+</table>
+</div>
+
+
+<div class="container" style="margin-top:30px">
+<h4> ProjectTeamTable</h4>
+<table class="table table-striped table-hover table-bordered">
+<thead>
+<tr>
+<th>ProjectTeamId(primaryKey)</th>
+<th>EmployeeId(foreignKey)</th>
+<th>ProjectId(foreignKey)</th>
+</tr></thead>
+<tr>
+<td>501</td>
+<td>001</td>
+<td>002</td>
+</tr>
+<tr>
+<td>502</td>
+<td>002</td>
+<td>001</td>
+</tr>
+<tr>
+<td>503</td>
+<td>003</td>
+<td>001</td>
+</tr>
+</table>
+</div>
+
+
+<div class="container" style="margin-top:30px">
+<h4> AllotmentTable</h4>
+<table class="table table-striped table-hover table-bordered">
+<thead>
+<tr>
+<th>AllotmentId(primaryKey)</th>
+<th>AllotmentName</th>
+<th>ProjectTeamId(foreignKey)</th>
+</tr></thead>
+<tr>
+<td>301</td>
+<td>001</td>
+<td>502</td>
+</tr>
+<tr>
+<td>302</td>
+<td>002</td>
+<td>501</td>
+</tr>
+<tr>
+<td>303</td>
+<td>003</td>
+<td>501</td>
+</tr>
+</table>
+</div>
+
+
+<div class="container" style="margin-top:30px">
+<h4> TimesheetTable</h4>
+<table class="table table-striped table-hover table-bordered">
+<thead>
+<tr>
+<th>TimesheetTableId(primaryKey)</th>
+<th>AllotmentId(foreignKey)<br>=>AllotmentName</th>
+<th>CategoryId(foreignKey)<br>=>CategoryName</th>
+<th>ActivityName</th>
+<th>Location</th>
+<th>TotalHours</th>
+</tr></thead>
+<tr>
+<td>001</td>
+<td>Project1</td>
+<td>Traning</td>
+<td>Self</td>
+<td>Noida</td>
+<td>8</td>
+</tr>
+</table>
+</div>
+
+
+</body>
+</html>
